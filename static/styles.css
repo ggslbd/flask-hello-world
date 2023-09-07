@@ -31,3 +31,25 @@
             background-color: #ddd;
             padding: 20px;
         }
+		
+		.box-container {
+			display: flex;
+			justify-content: space-between; /* Adjust this as needed */
+			align-items: center; /* Adjust this as needed */
+			margin-top: 20px; /* Adjust the margin as needed */
+		}
+
+		.box {
+			flex: 1;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #ccc;
+			background-color: #f0f0f0;
+			/* You can add more styling as desired */
+		}
+
+
+
+
+
+

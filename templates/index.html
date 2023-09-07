@@ -1,8 +1,39 @@
-<html>
-    <head>
-        <title>{{ title }}</title>
-    </head>
-    <body>
-        <h1>Hello {{ username }}</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd and Even Sections</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ header_text }}</h1>
+    </header>
+
+    <div class="odd-section">
+        <h2>Explore Bangladesh</h2>
+        <p>{{ welcome_text }}</p>
+    </div>
+
+    <div class="even-section">
+        <h2>Even Section 2</h2>
+        <p>This is an even-numbered section with some content.</p>
+    </div>
+
+    <div class="odd-section">
+        <h2>Odd Section 3</h2>
+        <p>This is another odd-numbered section with some content.</p>
+    </div>
+
+    <div class="even-section">
+        <h2>Even Section 4</h2>
+        <p>This is another even-numbered section with some content.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Website Name</p>
+    </footer>
+</body>
 </html>
+

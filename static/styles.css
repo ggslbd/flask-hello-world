@@ -1,35 +1,48 @@
-/* styles.css */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+Certainly! Here's a complete CSS stylesheet that you can use for your webpage to make it mobile-responsive:
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
+```css
+/* Default styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
 
-        .odd-section {
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
+h1 {
+    margin: 0;
+}
+
+.even-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
 
 /* Mobile-responsive styles */
-
-
 @media (max-width: 768px) {
     .even-section {
         flex-direction: column; /* Stack elements vertically on smaller screens */
@@ -44,4 +57,15 @@
     }
 }
 
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+```
 
+You can add this CSS code to your existing `styles.css` file, or include it within a `<style>` tag in the `<head>` section of your HTML document. This CSS includes styles for the header, even sections with boxes, and a mobile-responsive design using media queries. It also includes styles for the footer.
+
+Please note that this is a basic example, and you may need to further adjust the styles to match your specific design preferences. Test your webpage on different screen sizes to ensure it's mobile-responsive and looks good on various devices.
